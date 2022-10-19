@@ -159,13 +159,13 @@ Note: All the above steps are included in the __main__() method, and the user ca
     >>> Addis Ababa Institute of Technology
     >>> Department of SiTE
     >>> SECTION: 1
-** ______________________________________________**
-**|        Name                |   ID number     |**
-**|    1. Dawit Zeleke         |     UGR/7912/13 |**
-**|    2. Kena Tekalign        |     UGR/6147/13 |**
-**|    3. Nathnael Dereje      |     UGR/8587/13 |**
-**|    4. Zekariyas Teshager   |     UGR/5480/13 |**
-**|____________________________|_________________|**
+    
+
+>>>|        Name                |   ID number     |
+>>>|    1. Dawit Zeleke         |     UGR/7912/13 |
+>>>|    2. Kena Tekalign        |     UGR/6147/13 |
+>>>|    3. Nathnael Dereje      |     UGR/8587/13 |
+>>>|    4. Zekariyas Teshager   |     UGR/5480/13 |
 
 submitted to : Estifanos Sisay
 Submittion date: 8/10/22 G.c
