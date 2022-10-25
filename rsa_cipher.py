@@ -9,14 +9,11 @@ class RSA:
         # Checks the primality of the number entered
 
         def isprime ( num):
-            if(num == 2):
-                return True
-            elif((num < 2) or ((num % 2) == 0)):
-                return False
+            if(num == 2): return True
+            elif((num < 2) or ((num % 2) == 0)): return False
             elif(num > 2):
                 for i in range(2 , num):
-                    if not(num % i):
-                        return False
+                    if not(num % i): return False
             return True
 
         # Euclidean algorithm to find the gcs of two numbers
@@ -112,8 +109,7 @@ class RSA:
         # and concatenate the character formed to the <dec_msg> then return the 
         # decrypted string message
         for i in msg:
-            if (i == 400):
-                dec_msg += ' '
+            if (i == 400): dec_msg += ' '
             else:
                 m = (int(i) ** privatekey) % n            # the decryption formula using the private key
                 m += 65
