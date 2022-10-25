@@ -3,7 +3,7 @@ from transposition_cipher import transposition
 from rsa_cipher import RSA
 from affine_cipher import affine_cipher
 
-def __main__():
+def main():
     cryptosystem=input('''
     *********************************************************************************************
     _________________________Welcome_____________________
@@ -96,4 +96,4 @@ def __main__():
         ''')
 
 if  __name__ == “__main__”:
-    __main__()
+    main()
