@@ -95,4 +95,5 @@ def __main__():
         4.if you are done with the program
         ''')
 
-__main__()      
+if  __name__ == “__main__”:
+    __main__()
