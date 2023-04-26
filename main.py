@@ -8,7 +8,7 @@ def main():
     *********************************************************************************************
     _________________________Welcome_____________________
 
-    Choose the number that indicate the cryptosystem you want to encrypt your message with:
+    Choose the number that indicate the cryptosystem you want to encrypt your message wit.h:
     1. Affine Cipher
     2. Transposition Cipher
     3. RSA Cipher
@@ -35,8 +35,8 @@ def main():
                 elif c == '2':
                     d = input(' Enter the message you want to decrypt: ')    
                     print(">>>Decrypted message : " + privateKey.decrypt(d))
-            except:
-                    print(" An Exception occured at affine cipher encryption/ decryption.")
+            except Exception as e:
+                print(f'\033[91m ! An Exception occured at Affine encryption/ decryption, {e}\033[0m')
 
         elif cryptosystem == '2':
             print('*****You are currently using TRANSPOSITION CRYPTOSYSTEM *****')
@@ -56,8 +56,8 @@ def main():
                 elif c == '2':
                     d = input(' Enter the message you want to decrypt: ')    
                     print(">>>Decrypted message : " + privateKey.decrypt(d))
-            except:
-                print(" An Exception occured.")
+            except Exception as e:
+                print(f'\033[91m ! An Exception occured at Transposition encryption/ decryption, {e}\033[0m')
 
         elif cryptosystem=='3':
             print('*****You are currently using RSA CRYPTOSYSTEM*****')
@@ -78,8 +78,8 @@ def main():
                     d = input(' Enter the message you want to decrypt ( separate by comma ): ') 
                     publicKey.generatekeys(p, q)   
                     print(">>>Decrypted message : " + publicKey.decrypt(d.split(',')))
-            except:
-                print(" An Exception occured at rsa encryption/ decryption.")
+            except Exception as e:
+                print(f'\033[91m ! An Exception occured at rsa encryption/ decryption, {e}\033[0m')
 
         elif cryptosystem == '4':
             print(" \n\n\t\t Thanks for using our program.")
@@ -95,5 +95,5 @@ def main():
         4.if you are done with the program
         ''')
 
-if  __name__ == “__main__”:
+if  __name__ == "__main__":
     main()
